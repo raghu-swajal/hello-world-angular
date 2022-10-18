@@ -1,4 +1,26 @@
+<label>Server Name</label>
+
+<!--<input
+    type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)">-->
+
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="serverName">
+
+<!--<p>{{ serverName }}</p>-->
+
+<br>
+<button class="btn btn-primart" 
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()">Add Server</button>
+<!--<p [innerText]="allowNewServer"></p>-->
+<br>
+<p>{{ serverCreationStatus }}</p>
+
 <p>servers works!</p>
-<hr>
+<br>
 <p> This is server component nested in servers component.</p>
-<app-server></app-server>
+<app-server>

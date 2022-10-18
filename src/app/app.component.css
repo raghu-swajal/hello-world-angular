@@ -1,10 +1,14 @@
 h3 {
-    color: blue;
-    background-color: lawngreen;
+    color: dodgerblue;
+    background-color: palegreen;
 }
 .container {
-    background-color: magenta;
+    background-color: lightyellow;
 }
 hr {
     color: dodgerblue;
+}
+
+.app-servers {
+    background-color: aqua;
 }
