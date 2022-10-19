@@ -1,6 +1,10 @@
 <!-- Using serverStatus variable to show the status of server -->
-<p> {{ 'server' }} with ID {{ serverId }} is {{ serverStatus }}. </p>
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"> 
+    {{ 'server' }} with ID {{ serverId }} is {{ serverStatus }}. 
+</p>
 
 <!-- Using getServerStatus method to show the status of server -->
-<p> {{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}. </p>
+<!-- <p> {{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}. </p> -->
 
